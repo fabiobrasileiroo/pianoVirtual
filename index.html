@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piano virtual</title>
+  <link rel="stylesheet" href="/src/styles/reset.css">
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="/src/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Virtual Piano</h2>
+      <div class="column volume-slider">
+        <span>Volume</span><input 
+        type="range"
+        min="0"
+        max="1"
+        value="0.5" step="any">
+      </div>
+      <div class="column keys-check">
+        <span>Teclas</span> <input type="checkbox" checked>
+      </div>
+    </header>
+    <ul class="piano-keys">
+      <li class="key white" data-key="a"><span><button>a</button></span></li>
+      <li class="key black" data-key="w"><span><button>w</button></span></li>
+      <li class="key white" data-key="s"><span><button>s</button></span></li>
+      <li class="key black" data-key="e"><span><button>e</button></span></li>
+      <li class="key white" data-key="d"><span><button>d</button></span></li>
+      <li class="key black" data-key="f"><span><button>f</button></span></li>
+      <li class="key white" data-key="t"><span><button>t</button></span></li>
+      <li class="key black" data-key="g"><span><button>g</button></span></li>
+      <li class="key white" data-key="y"><span><button>y</button></span></li>
+      <li class="key black" data-key="h"><span><button>h</button></span></li>
+      <li class="key white" data-key="u"><span><button>u</button></span></li>
+      <li class="key black" data-key="j"><span><button>j</button></span></li>
+      <li class="key white" data-key="k"><span><button>k</button></span></li>
+      <li class="key black" data-key="o"><span><button>o</button></span></li>
+      <li class="key white" data-key="l"><span><button>l</button></span></li>
+      <li class="key black" data-key="p"><span><button>p</button></span></li>
+      <li class="key white" data-key=";"><span><button>;</button></span></li>
+    </ul>
+  </div>
+  <!-- <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=fffff&height=120&section=footer"/> -->
+  <script src="./src/script/engine.js" defer></script>
+</body>
+</html>
