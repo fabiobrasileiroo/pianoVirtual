@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
+app.use(express.static(path.join(__dirname, 'src')));
 const port = 80;
 
 // Configura o diretório estático para servir arquivos
