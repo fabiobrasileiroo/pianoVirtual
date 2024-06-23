@@ -8,7 +8,7 @@ git clone https://github.com/fabiobrasileiroo/pianoVirtual.git
 npm install
 ```
 
-### Verificar openSSH estar instalado
+### Verificar se o openSSH estar instalado
 ```
 sudo apt install openssh-server
 ``
